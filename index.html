@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ask for a date to crush</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Do you wanna go out with me?</h1>
+        </div>
+       
+        <div class="gif_container">
+            <img
+                style=height:200px;width:200px; src="https://www.icegif.com/wp-content/uploads/2023/05/icegif-190.gif"alt="cute animated illustration" />
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="movebutton()" onclick="movebutton()">
+                No
+            </button>
+
+            <script>
+                function nextPage() {
+                    window.location.href = "yes.html";
+                }
+                function movebutton() {
+                    var x =
+                        Math.random() *
+                        (window.innerWidth -
+                            document.getElementById("noButton").offsetWidth);
+                    var y =
+                        Math.random() *
+                        (window.innerHeight -
+                            document.getElementById("noButton").offsetHeight
+                        );
+                    document.getElementById("noButton").style.left = `${x}px`;
+                    document.getElementById("noButton").style.top = `${y}px`;
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
