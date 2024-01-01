@@ -4,7 +4,7 @@ body{
    align-items: center;
    height: 100vh;
 
-   background: linear-gradient(rgb(0, 249, 236), rgb(71, 150, 229));
+   background: linear-gradient(rgb(249, 17, 0), rgb(229, 95, 71));
 }
 
 #noButton{
@@ -27,14 +27,14 @@ body{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: wheat;
 }
 
 .text {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
